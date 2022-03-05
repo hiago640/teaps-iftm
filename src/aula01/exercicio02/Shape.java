@@ -1,4 +1,4 @@
-package aula01.exemplo02;
+package aula01.exercicio02;
 
 public interface Shape {
 	

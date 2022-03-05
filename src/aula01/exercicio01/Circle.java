@@ -1,4 +1,4 @@
-package aula01.exemplo01;
+package aula01.exercicio01;
 
 public class Circle extends Point{
 	private double radius;

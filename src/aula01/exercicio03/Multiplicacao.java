@@ -1,4 +1,4 @@
-package aula01.exemplo03;
+package aula01.exercicio03;
 
 public class Multiplicacao implements OperacaoMatematica{
 

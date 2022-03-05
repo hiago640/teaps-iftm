@@ -1,4 +1,4 @@
-package aula02.exemplo02;
+package aula02.exercicio02;
 
 public class Main extends Dicionario{
 	public static void main(String[] args) {

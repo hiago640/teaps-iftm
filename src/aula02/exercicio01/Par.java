@@ -1,4 +1,4 @@
-package aula02.exemplo01;
+package aula02.exercicio01;
 
 public class Par<F,S> {
 	

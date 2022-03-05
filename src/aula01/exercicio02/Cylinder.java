@@ -1,4 +1,4 @@
-package aula01.exemplo01;
+package aula01.exercicio02;
 
 public class Cylinder extends Circle {
 	private double height;
@@ -14,13 +14,15 @@ public class Cylinder extends Circle {
 
 	@Override
 	public double Area() {
-		double areaBase = Math.PI * getRadius() *  getHeight();
-		double areaLado =  2 * (Math.PI * getRadius() * getHeight());
-		
-		return (2 * areaBase + areaLado);
+		return 2 * Math.PI * getRadius() * (getRadius() + getHeight());
 	}
 	
 	public double Volume() {
-		return (getRadius() * getHeight());
+		return Math.PI * Math.pow(getRadius(),2) * getHeight();
+	}
+	
+	@Override
+	public String Nome() {
+		return "Cylinder";
 	}
 }
