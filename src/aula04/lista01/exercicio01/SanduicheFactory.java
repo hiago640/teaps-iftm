@@ -6,7 +6,7 @@ public abstract class SanduicheFactory {
 
 	public abstract Sanduiche createSanduiche(String type);
 
-	public Sanduiche orderPizza(String type) {
+	public Sanduiche orderSanduiche(String type) {
 		Sanduiche sandubao;
 		sandubao = createSanduiche(type);
 		sandubao.fritar();
