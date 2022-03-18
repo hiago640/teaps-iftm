@@ -7,8 +7,7 @@ import aula04.lista01.exercicio01.enums.SaladaEnum;
 
 public class SanduicheBasico extends Sanduiche {
 	
-	public SanduicheBasico(String loja, PaoEnum tipoPao, QueijoEnum tipoQueijo, PresuntoEnum tipoPresunto, SaladaEnum tipoSalada) {
-		this.descricao = loja;
+	public SanduicheBasico(PaoEnum tipoPao, QueijoEnum tipoQueijo, PresuntoEnum tipoPresunto, SaladaEnum tipoSalada) {
 		this.tipoPao = tipoPao;
 		this.tipoQueijo = tipoQueijo;
 		this.tipoPresunto = tipoPresunto;
