@@ -1,10 +1,12 @@
-package decorator;
+package decorator.exemplo01;
 
 public abstract class Numero {
 
 	public int numero;
 
 	protected String descricao;
+	
+	
 	
 	public void geraNumero() {
 		

@@ -1,8 +1,8 @@
-package decorator;
+package decorator.exemplo01;
 
-import decorator.decorators.ChavesDecorator;
-import decorator.decorators.ColcheteDecorator;
-import decorator.decorators.ParentesesDecorator;
+import decorator.exemplo01.decorators.ChavesDecorator;
+import decorator.exemplo01.decorators.ColcheteDecorator;
+import decorator.exemplo01.decorators.ParentesesDecorator;
 
 public class Principal {
 	

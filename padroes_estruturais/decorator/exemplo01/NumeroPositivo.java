@@ -1,4 +1,4 @@
-package decorator;
+package decorator.exemplo01;
 
 import java.util.Random;
 
