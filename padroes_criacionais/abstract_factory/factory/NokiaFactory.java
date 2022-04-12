@@ -1,10 +1,10 @@
 package abstract_factory.factory;
 
 import abstract_factory.AbstractPart;
-import abstract_factory.pecas.Bateria;
-import abstract_factory.pecas.Camera;
-import abstract_factory.pecas.Gps;
-import abstract_factory.pecas.Visor;
+import abstract_factory.exemplo02.products.Bateria;
+import abstract_factory.exemplo02.products.Camera;
+import abstract_factory.exemplo02.products.GPS;
+import abstract_factory.exemplo02.products.Visor;
 
 public class NokiaFactory implements FactoryInterface {
 
@@ -20,7 +20,7 @@ public class NokiaFactory implements FactoryInterface {
 			case CAMERA:
 				return new Camera(MARCA);
 			case GPS:
-				return new Gps(MARCA);
+				return new GPS(MARCA);
 			case VISOR:
 				return new Visor(MARCA);
 			default:
