@@ -2,8 +2,6 @@ package adapter.exemplo02;
 
 import java.util.List;
 
-import java.simple;
-
 
 public class FornecedorBOLA {
 	public List<PartidaBOLA> partidas;
@@ -17,6 +15,6 @@ public class FornecedorBOLA {
 	}
 	
 	public void LerArquivoJSON(String arquivo){
-		JSONObject a;
+		//JSONObject a;
 	}
 }
