@@ -1,6 +1,4 @@
-package factory_method.exemplo01.pizzas;
-
-import factory_method.exemplo01.Pizza;
+package factory_method.exemplo01.product;
 
 public class SaoPauloCheesePizza extends Pizza{
 	public SaoPauloCheesePizza()
@@ -14,7 +12,7 @@ public class SaoPauloCheesePizza extends Pizza{
 	}
 	
 	@Override
-	public void cut() {
+	public void cortar() {
 		System.out.println("Cortar a pizza em peda�os quadrados.");
 	}
 }

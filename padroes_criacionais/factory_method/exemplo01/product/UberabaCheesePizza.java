@@ -1,6 +1,4 @@
-package factory_method.exemplo01.pizzas;
-
-import factory_method.exemplo01.Pizza;
+package factory_method.exemplo01.product;
 
 public class UberabaCheesePizza extends Pizza {
 

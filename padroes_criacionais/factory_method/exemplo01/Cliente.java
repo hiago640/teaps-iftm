@@ -2,45 +2,46 @@ package factory_method.exemplo01;
 
 import java.util.Scanner;
 
-import factory_method.exemplo01.pizzas.PizzaEnum;
+import factory_method.exemplo01.factory.PizzaEnum;
+import factory_method.exemplo01.factory.PizzaFactory;
+import factory_method.exemplo01.factory.SaoPauloPizzaFactory;
+import factory_method.exemplo01.factory.UberabaPizzaFactory;
 
-public class Principal {
-
+public class Cliente {
+	
 	public static void main(String[] args) {
-		
 		Scanner scan = new Scanner(System.in);
 		StringBuilder sb = new StringBuilder();
 
 		sb.append("Escolha qual Pizzaria deseja encomendar Pizza.");
 		sb.append("\n1 - Pizzaria Uberaba");
-		sb.append("\n2 - Pizzaria S�o Paulo");
+		sb.append("\n2 - Pizzaria Sao Paulo");
 		sb.append("\n>>>> ");
 		System.out.print(sb.toString());
 		int option = scan.nextInt();
 
-		PizzaStore pizzaStore;
+		PizzaFactory pizzaFactory = null;
 		
 		switch (option) {
 			case 1:
-				pizzaStore = new UberabaPizzaStore();
-				escolheCardapio(pizzaStore);
+				pizzaFactory = new UberabaPizzaFactory();
 				break;
-	
 			case 2:
-				pizzaStore = new SaoPauloPizzaStore();
-				escolheCardapio(pizzaStore);
+				pizzaFactory = new SaoPauloPizzaFactory();
 				break;
-				
 			default:
 				break;
 		}
 		
+		mostrarCardapio(pizzaFactory);
 		scan.close();
-
 	}
 
-	
-	public static void escolheCardapio(PizzaStore pizzaStore) {
+	private static void mostrarCardapio(PizzaFactory pizzaFactory) {
+		
+		if(pizzaFactory == null) 
+			return;
+		
 		Scanner scan = new Scanner(System.in);
 
 		StringBuilder string = new StringBuilder();
@@ -56,22 +57,20 @@ public class Principal {
 		
 		switch (cardapio) {
 			case 1:
-				pizzaStore.orderPizza(PizzaEnum.CHEESE.getType());
+				pizzaFactory.orderPizza(PizzaEnum.CHEESE);
 				break;
-	
 			case 2:
-				pizzaStore.orderPizza(PizzaEnum.PEPPERONI.getType());
+				pizzaFactory.orderPizza(PizzaEnum.PEPPERONI);
 				break;
-	
 			case 3:
-				pizzaStore.orderPizza(PizzaEnum.VEGGIE.getType());
+				pizzaFactory.orderPizza(PizzaEnum.VEGGIE);
 				break;
-	
 			default:
 				break;
 		}
 		
 		scan.close();
+		
 	}
-
+	
 }
