@@ -1,9 +1,13 @@
-package singleton;
+package singleton.exemplo01.singleton;
 
 import java.util.Random;
 
 public class RandomNumberGenerator {
-
+	
+	private RandomNumberGenerator() {
+	
+	}
+	
 	private static RandomNumberGenerator uniqueInstance;
 
 	public static RandomNumberGenerator getInstance() {
