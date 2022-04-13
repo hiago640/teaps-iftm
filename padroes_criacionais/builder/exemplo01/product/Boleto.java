@@ -1,4 +1,4 @@
-package builder;
+package builder.exemplo01.product;
 
 public class Boleto {
 

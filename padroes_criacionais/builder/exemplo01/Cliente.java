@@ -1,6 +1,10 @@
-package builder;
+package builder.exemplo01;
 
-public class Principal {
+import builder.exemplo01.builder.ItauBoleto;
+import builder.exemplo01.director.BancoDirector;
+import builder.exemplo01.product.Boleto;
+
+public class Cliente {
 	
 	public static void main(String[] args) {
 		ItauBoleto itauBoleto = new ItauBoleto();
@@ -10,7 +14,5 @@ public class Principal {
 		Boleto boleto = bancoDirector.getBoleto();
 		
 		System.out.println(boleto);
-		
 	}
-	
 }

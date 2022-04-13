@@ -1,4 +1,4 @@
-package builder;
+package builder.exemplo01.builder;
 
 public class ItauBoleto extends BoletoBuilder {
 
@@ -10,13 +10,11 @@ public class ItauBoleto extends BoletoBuilder {
 	@Override
 	public void buildSacado() {
 		boleto.setSacado("Nafuzi");
-
 	}
 
 	@Override
 	public void buildCedente() {
 		boleto.setCedente("Hiago");
-
 	}
 
 	@Override

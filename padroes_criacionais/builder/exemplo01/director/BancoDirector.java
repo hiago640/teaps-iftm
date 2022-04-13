@@ -1,4 +1,7 @@
-package builder;
+package builder.exemplo01.director;
+
+import builder.exemplo01.builder.BoletoBuilder;
+import builder.exemplo01.product.Boleto;
 
 public class BancoDirector {
 	

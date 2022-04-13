@@ -1,4 +1,6 @@
-package builder;
+package builder.exemplo01.builder;
+
+import builder.exemplo01.product.Boleto;
 
 public abstract class BoletoBuilder {
 	
