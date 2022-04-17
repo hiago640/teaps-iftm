@@ -1,13 +1,13 @@
-package bridge;
+package bridge.exemplo01;
 
-import bridge.abstracao_refrigerante.CocaCola;
-import bridge.abstracao_refrigerante.Fanta;
-import bridge.abstracao_refrigerante.Guarana;
-import bridge.abstracao_tamanho.TamanhoGigante;
-import bridge.abstracao_tamanho.TamanhoMedio;
-import bridge.abstracao_tamanho.TamanhoPequeno;
+import bridge.exemplo01.abstraction.TamanhoGigante;
+import bridge.exemplo01.abstraction.TamanhoMedio;
+import bridge.exemplo01.abstraction.TamanhoPequeno;
+import bridge.exemplo01.implementation.CocaCola;
+import bridge.exemplo01.implementation.Fanta;
+import bridge.exemplo01.implementation.Guarana;
 
-public class Principal {
+public class Cliente {
 	
 	public static void main(String[] args) {
 		TamanhoMedio guaranaTamanhoMedio = new TamanhoMedio(new Guarana());

@@ -1,4 +1,4 @@
-package bridge.abstracao_refrigerante;
+package bridge.exemplo01.implementation;
 
 public class CocaCola implements ImplementacaoRefrigerante{
 

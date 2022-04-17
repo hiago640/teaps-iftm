@@ -1,6 +1,6 @@
-package bridge.abstracao_tamanho;
+package bridge.exemplo01.abstraction;
 
-import bridge.abstracao_refrigerante.ImplementacaoRefrigerante;
+import bridge.exemplo01.implementation.ImplementacaoRefrigerante;
 
 public abstract class AbstracaoTamanho {
 	
