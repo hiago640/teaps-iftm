@@ -1,4 +1,4 @@
-package aula01.exercicio02;
+package aula01.heranca_polimorfismo;
 
 public class Cylinder extends Circle {
 	private double height;
@@ -14,15 +14,13 @@ public class Cylinder extends Circle {
 
 	@Override
 	public double Area() {
-		return 2 * Math.PI * getRadius() * (getRadius() + getHeight());
+		double areaBase = Math.PI * getRadius() *  getHeight();
+		double areaLado =  2 * (Math.PI * getRadius() * getHeight());
+		
+		return (2 * areaBase + areaLado);
 	}
 	
 	public double Volume() {
-		return Math.PI * Math.pow(getRadius(),2) * getHeight();
-	}
-	
-	@Override
-	public String Nome() {
-		return "Cylinder";
+		return (getRadius() * getHeight());
 	}
 }

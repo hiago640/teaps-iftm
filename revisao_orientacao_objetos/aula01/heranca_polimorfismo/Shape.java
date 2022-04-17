@@ -1,4 +1,4 @@
-package aula01.exercicio01;
+package aula01.heranca_polimorfismo;
 
 public abstract class Shape {
 	public String nome;

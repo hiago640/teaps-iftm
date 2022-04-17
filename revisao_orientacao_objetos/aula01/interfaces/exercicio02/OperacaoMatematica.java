@@ -1,4 +1,4 @@
-package aula01.exercicio03;
+package aula01.interfaces.exercicio02;
 
 public interface OperacaoMatematica {
 	

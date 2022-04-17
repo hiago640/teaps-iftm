@@ -1,4 +1,4 @@
-package aula01.exercicio02;
+package aula01.interfaces.exercicio01;
 
 public class Main {
 	
@@ -17,9 +17,9 @@ public class Main {
 		
 		System.out.println();
 		System.out.println("Dados da forma: " + circle.Nome());
-		System.out.println("Área do círculo: " + circle.Area());
-		System.out.println("Círcunferência do círculo: " + circle.Circumference());
-		System.out.println("Diamêtro do círculo: " + circle.Diameter());
+		System.out.println("ï¿½rea do cï¿½rculo: " + circle.Area());
+		System.out.println("Cï¿½rcunferï¿½ncia do cï¿½rculo: " + circle.Circumference());
+		System.out.println("Diamï¿½tro do cï¿½rculo: " + circle.Diameter());
 		
 		Cylinder cylinder = new Cylinder();
 		cylinder.setRadius(2);
@@ -27,8 +27,8 @@ public class Main {
 
 		System.out.println();
 		System.out.println("Dados da forma: " + cylinder.Nome());
-		System.out.println("Área do cilindro: " + cylinder.Area());
-		System.out.println("Volume do círculo: " + cylinder.Volume());
+		System.out.println("ï¿½rea do cilindro: " + cylinder.Area());
+		System.out.println("Volume do cï¿½rculo: " + cylinder.Volume());
 		
 	}
 }

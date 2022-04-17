@@ -1,4 +1,4 @@
-package aula02.exercicio02;
+package aula02.classes_genericas.exercicio02;
 
 import java.util.ArrayList;
 import java.util.List;

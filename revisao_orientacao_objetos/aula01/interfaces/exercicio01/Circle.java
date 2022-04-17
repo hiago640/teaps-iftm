@@ -1,8 +1,7 @@
-package aula01.exercicio01;
+package aula01.interfaces.exercicio01;
 
 public class Circle extends Point{
 	private double radius;
-	
 	
 	
 	public double getRadius() {
@@ -25,5 +24,10 @@ public class Circle extends Point{
 	
 	public double Circumference() {
 		return (Math.PI * Diameter());
+	}
+	
+	@Override
+	public String Nome() {
+		return "Circle";
 	}
 }

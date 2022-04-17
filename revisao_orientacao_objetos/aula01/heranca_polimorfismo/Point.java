@@ -1,4 +1,4 @@
-package aula01.exercicio01;
+package aula01.heranca_polimorfismo;
 
 public class Point extends Shape{
 	private double x;

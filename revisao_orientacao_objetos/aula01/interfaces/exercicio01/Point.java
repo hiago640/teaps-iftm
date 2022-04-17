@@ -1,4 +1,4 @@
-package aula01.exercicio02;
+package aula01.interfaces.exercicio01;
 
 public class Point implements Shape{
 	private double x;

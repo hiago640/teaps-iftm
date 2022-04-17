@@ -1,7 +1,8 @@
-package aula01.exercicio02;
+package aula01.heranca_polimorfismo;
 
 public class Circle extends Point{
 	private double radius;
+	
 	
 	
 	public double getRadius() {
@@ -24,10 +25,5 @@ public class Circle extends Point{
 	
 	public double Circumference() {
 		return (Math.PI * Diameter());
-	}
-	
-	@Override
-	public String Nome() {
-		return "Circle";
 	}
 }
