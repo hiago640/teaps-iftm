@@ -1,6 +1,9 @@
 package adapter.exemplo01;
 
-public class Principal {
+import adapter.exemplo01.adapter.SomadorAdapter;
+import adapter.exemplo01.service.SomadorExistente;
+
+public class Cliente {
 	
 	public static void main(String[] args) {
 		SomadorExistente somador = new SomadorExistente();

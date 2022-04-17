@@ -1,4 +1,4 @@
-package adapter.exemplo01;
+package adapter.exemplo01.service;
 
 import java.util.List;
 
