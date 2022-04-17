@@ -1,8 +1,8 @@
 package flyweight.exemplo01;
 
 import flyweight.exemplo01.flyweight.FlyweightFactory;
-import flyweight.exemplo01.flyweight.Sprites;
 import flyweight.exemplo01.object.Ponto;
+import flyweight.exemplo01.object.Sprites;
 
 public class Cliente {
 

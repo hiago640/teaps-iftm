@@ -3,6 +3,8 @@ package flyweight.exemplo01.flyweight;
 import java.util.ArrayList;
 import java.util.List;
 
+import flyweight.exemplo01.object.Sprites;
+
 public class FlyweightFactory {
 
 	public List<Flyweight> flyweights;
