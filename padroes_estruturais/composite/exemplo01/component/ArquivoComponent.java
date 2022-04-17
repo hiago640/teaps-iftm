@@ -1,6 +1,6 @@
 package composite.exemplo01.component;
 
-public class ArquivoComponent {
+public abstract class ArquivoComponent {
 	public String nomeDoArquivo;
 
 	public void printNomeDoArquivo() {
