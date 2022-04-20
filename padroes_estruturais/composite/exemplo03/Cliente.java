@@ -1,10 +1,10 @@
-package provas.questao01;
+package composite.exemplo03;
 
-import provas.questao01.component.RHComponent;
-import provas.questao01.composite.GrupoComposite;
-import provas.questao01.leaf.Docente;
-import provas.questao01.leaf.TAE;
-import provas.questao01.leaf.TipoGrupoEnum;
+import composite.exemplo03.component.RHComponent;
+import composite.exemplo03.composite.GrupoComposite;
+import composite.exemplo03.leaf.Docente;
+import composite.exemplo03.leaf.TAE;
+import composite.exemplo03.leaf.TipoGrupoEnum;
 
 public class Cliente {
 	

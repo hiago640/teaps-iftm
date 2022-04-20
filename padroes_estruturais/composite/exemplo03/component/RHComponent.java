@@ -1,6 +1,6 @@
-package questao01.component;
+package composite.exemplo03.component;
 
-import questao01.leaf.TipoGrupoEnum;
+import composite.exemplo03.leaf.TipoGrupoEnum;
 
 public abstract class RHComponent {
 	public String nomeDoLider;
