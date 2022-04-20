@@ -1,4 +1,4 @@
-package questao03.singleton;
+package singleton.exemplo03.singleton;
 
 public class Usuario {
 	private String nome;

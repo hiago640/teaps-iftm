@@ -1,7 +1,7 @@
-package questao03;
+package singleton.exemplo03;
 
-import questao03.singleton.ConexoesUsuarios;
-import questao03.singleton.Usuario;
+import singleton.exemplo03.singleton.ConexoesUsuarios;
+import singleton.exemplo03.singleton.Usuario;
 
 public class Cliente {
 	public static void main(String[] args) {

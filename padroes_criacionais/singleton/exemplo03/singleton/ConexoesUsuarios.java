@@ -1,4 +1,4 @@
-package questao03.singleton;
+package singleton.exemplo03.singleton;
 
 import java.util.ArrayList;
 import java.util.List;
