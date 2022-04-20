@@ -1,6 +1,6 @@
-package questao02.decorators;
+package decorator.exemplo03.decorators;
 
-import questao02.product.Tarefa;
+import decorator.exemplo03.product.Tarefa;
 
 public class Entregas extends TarefaDecorator{
 	

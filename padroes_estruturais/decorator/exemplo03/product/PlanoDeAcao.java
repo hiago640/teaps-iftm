@@ -1,4 +1,4 @@
-package questao02.product;
+package decorator.exemplo03.product;
 
 import java.util.ArrayList;
 import java.util.List;

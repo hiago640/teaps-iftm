@@ -1,9 +1,9 @@
-package questao02.product;
+package decorator.exemplo03.product;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import questao02.product.enums.TipoResponsavelEnum;
+import decorator.exemplo03.product.enums.TipoResponsavelEnum;
 
 public class Acao {
 	public String dtInicio;

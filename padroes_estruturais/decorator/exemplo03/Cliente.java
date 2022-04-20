@@ -1,13 +1,13 @@
-package questao02;
+package decorator.exemplo03;
 
-import questao02.decorators.Entregas;
-import questao02.decorators.Meta;
-import questao02.decorators.Reuniao;
-import questao02.product.Acao;
-import questao02.product.PlanoDeAcao;
-import questao02.product.Tarefa;
-import questao02.product.enums.TipoMetaEnum;
-import questao02.product.enums.TipoResponsavelEnum;
+import decorator.exemplo03.decorators.Entregas;
+import decorator.exemplo03.decorators.Meta;
+import decorator.exemplo03.decorators.Reuniao;
+import decorator.exemplo03.product.Acao;
+import decorator.exemplo03.product.PlanoDeAcao;
+import decorator.exemplo03.product.Tarefa;
+import decorator.exemplo03.product.enums.TipoMetaEnum;
+import decorator.exemplo03.product.enums.TipoResponsavelEnum;
 
 public class Cliente {
 	

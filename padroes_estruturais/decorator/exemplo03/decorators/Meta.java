@@ -1,7 +1,7 @@
-package questao02.decorators;
+package decorator.exemplo03.decorators;
 
-import questao02.product.Tarefa;
-import questao02.product.enums.TipoMetaEnum;
+import decorator.exemplo03.product.Tarefa;
+import decorator.exemplo03.product.enums.TipoMetaEnum;
 
 public class Meta extends TarefaDecorator {
 

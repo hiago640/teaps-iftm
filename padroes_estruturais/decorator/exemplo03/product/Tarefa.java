@@ -1,6 +1,6 @@
-package questao02.product;
+package decorator.exemplo03.product;
 
-import questao02.product.enums.TipoResponsavelEnum;
+import decorator.exemplo03.product.enums.TipoResponsavelEnum;
 
 public class Tarefa {
 	

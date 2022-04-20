@@ -1,4 +1,4 @@
-package questao02.product.enums;
+package decorator.exemplo03.product.enums;
 
 public enum TipoMetaEnum {
 	PROCESSO,
