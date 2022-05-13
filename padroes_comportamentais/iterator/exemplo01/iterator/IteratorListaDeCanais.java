@@ -8,12 +8,12 @@ public class IteratorListaDeCanais implements IteratorInterface {
 
 	protected ArrayList<Canal> lista;
 	protected int contador;
-	
+
 	public IteratorListaDeCanais(ArrayList<Canal> lista) {
 		this.lista = lista;
 		contador = 0;
 	}
-	
+
 	@Override
 	public void first() {
 		contador = 0;
@@ -31,11 +31,12 @@ public class IteratorListaDeCanais implements IteratorInterface {
 
 	@Override
 	public Canal currentItem() {
-		if(isDone())
+		if (isDone()) {
 			contador = lista.size() - 1;
-		else 
+		} else if (contador < 0) {
 			contador = 0;
-		
+		}
+
 		return lista.get(contador);
 	}
 

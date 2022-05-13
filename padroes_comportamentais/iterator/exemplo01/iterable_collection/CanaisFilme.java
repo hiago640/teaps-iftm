@@ -1,25 +1,23 @@
 package iterator.exemplo01.iterable_collection;
 
-import java.util.ArrayList;
-
 import iterator.exemplo01.iterator.IteratorInterface;
-import iterator.exemplo01.iterator.IteratorListaDeCanais;
+import iterator.exemplo01.iterator.IteratorVetorDeCanais;
 import iterator.exemplo01.product.Canal;
 
-public class CanaisFilme {
+public class CanaisFilme implements AgregadoDeCanais{
 	protected Canal[] canais;
 	
 	public CanaisFilme() {
-		canais = new ArrayList<Canal>();
-		canais.add(new Canal("Telecine"));
-		canais.add(new Canal("HBO"));
-		canais.add(new Canal("Amazon Prime"));
-		canais.add(new Canal("Disney+"));
+		canais = new Canal[4];
+		canais[0] = new Canal("Telecine");
+		canais[1] = new Canal("HBO");
+		canais[2] = new Canal("Amazon Prime");
+		canais[3] = new Canal("Disney+");
 	}
 	
 	@Override
 	public IteratorInterface criarIterator() {
-		return new IteratorListaDeCanais(canais);
+		return new IteratorVetorDeCanais(canais);
 	}
 
 }

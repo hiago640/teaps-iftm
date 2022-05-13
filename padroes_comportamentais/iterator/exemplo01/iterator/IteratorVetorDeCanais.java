@@ -6,12 +6,12 @@ public class IteratorVetorDeCanais implements IteratorInterface {
 
 	protected Canal[] lista;
 	protected int contador;
-	
+
 	public IteratorVetorDeCanais(Canal[] lista) {
 		this.lista = lista;
 		contador = 0;
 	}
-	
+
 	@Override
 	public void first() {
 		contador = 0;
@@ -29,11 +29,12 @@ public class IteratorVetorDeCanais implements IteratorInterface {
 
 	@Override
 	public Canal currentItem() {
-		if(isDone())
+		if (isDone()) {
 			contador = lista.length - 1;
-		else 
+		} else if (contador < 0) {
 			contador = 0;
-		
+		}
+
 		return lista[contador];
 	}
 
