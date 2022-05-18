@@ -11,42 +11,30 @@ public class DietInfo {
 	DietInfoCareTaker careTaker;
 
 	public DietInfo() {
-		nomeDietista = new String();
-		diaDieta = new String();
-		peso = new String();
+		this.nomeDietista = new String();
+		this.diaDieta = new String();
+		this.peso = new String();
 		
-		careTaker = new DietInfoCareTaker();
+		this.careTaker = new DietInfoCareTaker();
 	}
 
 	public void setDietInfo(String nomeDietista, String diaDieta, String peso) {
-		careTaker.adicionarMemento(new DietInfoMemento(nomeDietista, diaDieta, peso));
-		nomeDietista += nomeDietista;
-		diaDieta += diaDieta;
-		peso += peso;
+		this.careTaker.adicionarMemento(new DietInfoMemento(nomeDietista, diaDieta, peso));
+		this.nomeDietista += nomeDietista + " ";
+		this.diaDieta += diaDieta + " ";
+		this.peso += peso+ " ";
 	}
 	
 	public void desfazerEscrita() {
-		nomeDietista = careTaker.getUltimoEstadoSalvo().getNomeDietista();
-		diaDieta = careTaker.getUltimoEstadoSalvo().getDiaDieta();
-		peso = careTaker.getUltimoEstadoSalvo().getPeso();
-	}
-
-	private void mostrarNomeDietista() {
-		System.out.println(nomeDietista);
-	}
-	
-	private void mostrarDiaDieta() {
-		System.out.println(diaDieta);
-	}
-	
-	private void mostrarPeso() {
-		System.out.println(peso);
+		final DietInfoMemento ultimoEstado = careTaker.getUltimoEstadoSalvo();
+		
+		this.nomeDietista = ultimoEstado.getNomeDietista();
+		this.diaDieta = ultimoEstado.getDiaDieta();
+		this.peso = ultimoEstado.getPeso();
 	}
 	
 	public void mostrarInfo() {
-		mostrarNomeDietista();
-		mostrarDiaDieta();
-		mostrarPeso();
+		System.out.println(this.nomeDietista + " - " + this.diaDieta + " - " + this.peso + "\n");
 	}
 	
 }

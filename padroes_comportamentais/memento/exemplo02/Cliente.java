@@ -9,8 +9,8 @@ public class Cliente {
 		DietInfo dietInfo = new DietInfo();
 		
 		dietInfo.setDietInfo("Nicole", "1", "50");
-		dietInfo.setDietInfo("Nicole", "2", "60");
-		dietInfo.setDietInfo("Nicole", "4", "80");
+		dietInfo.setDietInfo("Sandra", "2", "60");
+		dietInfo.setDietInfo("Lucas", "4", "80");
 		dietInfo.mostrarInfo();
 
 		System.out.println("Retirando a 3º linha");

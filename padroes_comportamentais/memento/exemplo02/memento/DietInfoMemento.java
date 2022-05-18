@@ -12,15 +12,15 @@ public class DietInfoMemento {
 	}
 
 	public String getNomeDietista() {
-		return nomeDietista;
+		return this.nomeDietista;
 	}
 
 	public String getDiaDieta() {
-		return diaDieta;
+		return this.diaDieta;
 	}
 
 	public String getPeso() {
-		return peso;
+		return this.peso;
 	}
 
 }
