@@ -1,7 +1,6 @@
 package observer.exemplo01.subject;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import observer.exemplo01.observer.Observer;

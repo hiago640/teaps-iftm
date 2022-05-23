@@ -11,30 +11,6 @@ public class Point implements Subject{
 	private int y;
 	private String color;
 	private List<Observer> observers;
-	
-	public int getX() {
-		return x;
-	}
-
-	public void setX(int x) {
-		this.x = x;
-	}
-
-	public int getY() {
-		return y;
-	}
-
-	public void setY(int y) {
-		this.y = y;
-	}
-
-	public String getColor() {
-		return color;
-	}
-
-	public void setColor(String color) {
-		this.color = color;
-	}
 
 	public Point() {
 		observers = new ArrayList<>();
@@ -49,10 +25,6 @@ public class Point implements Subject{
 	public void removeObserver(Observer o) {
 		observers.remove(o);
 	}
-
-	private void tamanhoAlterado() {
-		notifyObserver();
-	}
 	
 	@Override
 	public void notifyObserver() {
@@ -60,12 +32,16 @@ public class Point implements Subject{
 			ob.update(x, y, color);
 	}
 	
-	public void setValores(int x, int y, String color) {
+	private void valuesChanged() {
+		notifyObserver();
+	}
+	
+	public void setValues(int x, int y, String color) {
 		this.color = color;
 		this.x = x;
 		this.y = y;
 		
-		tamanhoAlterado();
+		valuesChanged();
 	}
 	
 

@@ -9,9 +9,10 @@ public class Cliente {
 	public static void main(String[] args) {
 		Line line = new Line();
 		Point point = new Point();
-		Screen screen = new Screen(line);
+		new Screen(line);
+		new Screen(point);
 		
-		line.setValores(28, 58, "ROXO");
-		line.setValores(60, 58, "VERDE");
+		line.setValues(28, 58, "linha ROXO");
+		point.setValues(60, 58, "ponto VERDE");
 	}
 }

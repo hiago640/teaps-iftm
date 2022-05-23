@@ -12,30 +12,6 @@ public class Line implements Subject{
 	private String color;
 	private List<Observer> observers;
 
-	public int getP1() {
-		return p1;
-	}
-
-	public void setP1(int p1) {
-		this.p1 = p1;
-	}
-
-	public int getP2() {
-		return p2;
-	}
-
-	public void setP2(int p2) {
-		this.p2 = p2;
-	}
-
-	public String getColor() {
-		return color;
-	}
-
-	public void setColor(String color) {
-		this.color = color;
-	}
-
 	public Line() {
 		observers = new ArrayList<>();
 	}
@@ -49,10 +25,6 @@ public class Line implements Subject{
 	public void removeObserver(Observer o) {
 		observers.remove(o);
 	}
-
-	private void tamanhoAlterado() {
-		notifyObserver();
-	}
 	
 	@Override
 	public void notifyObserver() {
@@ -60,12 +32,16 @@ public class Line implements Subject{
 			ob.update(p1, p2, color);
 	}
 	
-	public void setValores(int p1, int p2, String color) {
+	private void valuesChanged() {
+		notifyObserver();
+	}
+	
+	public void setValues(int p1, int p2, String color) {
 		this.color = color;
 		this.p1 = p1;
 		this.p2 = p2;
 		
-		tamanhoAlterado();
+		valuesChanged();
 	}
 	
 
