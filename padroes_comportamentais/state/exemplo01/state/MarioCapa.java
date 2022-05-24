@@ -11,7 +11,7 @@ public class MarioCapa implements MarioState {
 	@Override
 	public MarioState pegarFlor() {
 		System.out.println("Mario com Fogo");
-		return null;
+		return new MarioFogo();
 	}
 
 	@Override
